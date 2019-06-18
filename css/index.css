@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+
 }
 html,
 body {
@@ -177,7 +178,6 @@ img {
 .main-navigation {
   width: 100%;
   height: 90px;
-  background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
   position: fixed;
 }
@@ -320,12 +320,15 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
     margin: 0 auto 30px;
   }
 }
+
+
 .home .content-pick .destination .btn {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -340,7 +343,14 @@ img {
   border: 1px solid #C0C0C0;
   cursor: pointer;
   font-size: 1.8rem;
+  transform: scale(.9);
+  transform-origin: 0 0;
+  transition: transform 5s;
 }
+.large {
+  transform: scale(3.3);
+}
+
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
